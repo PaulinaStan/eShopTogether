@@ -10,7 +10,7 @@
   su /var/lib/mysql katalogu db konteineryje. Taip pat, yra nustatytas MySQL vartotojo ir duomenų bazės slaptažodžiai.
   Visos aplikacijos duomenys yra saugomi "db" volume'e, kuris yra nustatytas kaip ne-external (t.y. bus sukurtas viduje,
   o ne išorėje).
-5.Sukūriam ir paleidžiam Docker konteinerius parašydami komandą terminale: docker compose up -d
+5.Sukuriam ir paleidžiam Docker konteinerius parašydami komandą terminale: docker compose up -d
 6.Pereinam į konteinerio vidų parašydami komandą terminale: docker compose exec -it web bash
 7.Konteinerio viduje rašom komandą: composer create -project laravel/laravel .  (Komanda sukūrs visus laravel failus
   mūsų laravel_failai direktorijoje.
@@ -27,4 +27,34 @@
    kurioje yra pavadinimu "origin", į jos "main" šaką. Jei šakos pavadinimas jūsų nuotolinėje saugykloje yra skirtingas,
    tada jums reikėtų pakeisti "main" į atitinkamą šakos pavadinimą. (AKV85:1-13)
 
+14.Naudosim GitHub, PhpStorm ir Docker.
+
+15. Paleidžiam naują projektą PhpStorme su pavadinimu "eShopTogether".
+
+16. GitHub paskyroje perejom i   https://github.com/AKV85/eShopTogether.git ir paspaudziau fork -> create fork
+
+16. Pereinam i phpstorm ir sukuriam direktoriją eShopTogether ir docker-compose.yml
+
+17. Pakoreguojam tinkamai docker-compose.yml failą.
+
+18. Sukuriam ir paleidžiam Docker konteinerius parašydami komandą terminale: docker compose up -d
+
+19. Pereinam į konteinerio vidų parašydami komandą terminale: docker compose exec -it web bash
+
+20. Konteinerio viduje rašom komandą: composer install (Komanda sukurs visus laravel failus
+      mūsų eShopTogether direktorijoje.
+
+21. Faile .env surašom DB_USERNAME = devuser ir DB_PASSWORD = devpass (Ir Database->New->Data Source->MySQL->properties
+            suvedam username ir password. Potestuojam connection ir spaudžiam Apply.
+
+22. (GIT) git add .
+
+25. Terminale rašom: git commit -m "sukuriau konteinerius ir suinstaliavau laravel failus ir papildziau atliktu darbu sarasa"
+ (Komanda įvykdo "commit" operaciją, kuri leidžia jums išsaugoti savo
+                          failų pakeitimus Git istorijoje su žinute "First commit". Tai reiškia, kad jūsų pakeitimai yra įrašyti į jūsų vietinę
+                          Git saugyklą.
+
+26. Terminale rašom: git push -u origin main (Komanda naudojama siųsti savo įrašytus pakeitimus į nuotolinę Git saugyklą,
+ kurioje yra pavadinimu "origin", į jos "main" šaką. Jei šakos pavadinimas jūsų nuotolinėje saugykloje yra skirtingas,
+  tada jums reikėtų pakeisti "main" į atitinkamą šakos pavadinimą. (PaulinaStan:13-26)
 
