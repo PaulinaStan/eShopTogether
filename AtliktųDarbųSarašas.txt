@@ -50,9 +50,6 @@
 22. (GIT) git add .
 
 25. Terminale rašom: git commit -m "sukuriau konteinerius ir suinstaliavau laravel failus ir papildziau atliktu darbu sarasa"
- (Komanda įvykdo "commit" operaciją, kuri leidžia jums išsaugoti savo
-                          failų pakeitimus Git istorijoje su žinute "First commit". Tai reiškia, kad jūsų pakeitimai yra įrašyti į jūsų vietinę
-                          Git saugyklą.
 
 26. Terminale rašom: git push -u origin main (Komanda naudojama siųsti savo įrašytus pakeitimus į nuotolinę Git saugyklą,
  kurioje yra pavadinimu "origin", į jos "main" šaką. Jei šakos pavadinimas jūsų nuotolinėje saugykloje yra skirtingas,
